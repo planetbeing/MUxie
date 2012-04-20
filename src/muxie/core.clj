@@ -88,7 +88,7 @@
 (declare userprint)
 (defn print-user-log
   ([uref]
-     (userprint uref (join "\n" (deref (:log @uref)))))
+     (userprint uref (join "" (deref (:log @uref)))))
   ([] (print-user-log *user*)))
 
 (defn print-and-discard-user-log
